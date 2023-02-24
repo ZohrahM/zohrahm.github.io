@@ -149,6 +149,7 @@ body {
 .nav-area{
   width: 100%;
   background-color: var(--color-2);
+  height: 64.5px;
 }
 
 .nav-area ul{
@@ -160,10 +161,12 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .nav area ul li{
   width: 50%;
+  height: 100%;
 }
 
 .nav-area ul li > ul{
@@ -201,6 +204,7 @@ body {
 }
 
 .nav-area a{
+  height: 100%;
   font-size: 24px;
   display: block;
   background-color: var(--color-2);
@@ -355,7 +359,6 @@ z-index: 11;
 
 
 @media(max-width: 600px){
-
   #bar.slide{
     display: block;
     z-index: 999;
@@ -392,4 +395,11 @@ z-index: 11;
     display: none;
   }
 
+  .nav-area a{
+    height: auto;
+  }
+
+  .nav-area ul{
+    height: auto;
+  }
 }
